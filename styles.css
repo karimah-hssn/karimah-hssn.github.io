@@ -5,7 +5,7 @@ body {
   background-size: 1440px 720px;
 }
 
-ul {
+.atasan ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -16,11 +16,11 @@ ul {
 
 }
 
-li {
+.atasan li {
   float: left;
 }
 
-li a {
+.atasan li a {
   display: block;
   color: #000000;
   text-align: center;
@@ -28,7 +28,7 @@ li a {
   text-decoration: none;
 }*/
 
-li a:hover:not(.active) {
+.atasan li a:hover:not(.active) {
   background-color: #111;
 }
 
@@ -54,3 +54,30 @@ li a:hover:not(.active) {
   text-align: center;
   margin-top: 10em;
 }
+@media only screen and (max-width: 1080px) {
+  .atasan ul {
+    width: auto;
+  }
+  .atasan li{
+    width: auto;
+  }
+  .atasan li a{
+    width: auto;
+  }
+  .atasan li a:hover:not(.active) {
+    width: auto;
+  }
+  .active {
+    width: auto;
+  }
+  .center{
+    width: 68%;
+  }
+  .center p{
+    width: 68%;
+  }
+  .bottomText{
+    width: 68%;
+  }
+}
+
