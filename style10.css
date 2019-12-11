@@ -1,0 +1,55 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-image: url(sawah.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.95;
+}
+
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #666600;
+  overflow-x: hidden;
+  padding-top: 16px;g/
+}
+
+.sidebar a {
+  padding: 25px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.sidebar .active{
+  color: black;
+  background-color: #CCCC00;
+}
+
+.sidebar .active2{
+  background-color: #808000 ;
+}
+
+.sidebar a:hover {
+  color: #000000;
+}
+.card{
+  padding: 0px 10px;
+  width:950px;
+  height:1000px;
+  background:#666600;
+  margin-top: 75px;
+  margin-left: 17.5em;
+  border-radius: 5px 5px 5px 5px;
+}
+.card img{
+  width: 350px;
+  height:300px;
+  margin-top: 10px;
+  margin-left: 20px;
+}

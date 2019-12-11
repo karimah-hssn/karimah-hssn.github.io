@@ -15,85 +15,283 @@
 		 <a href="index.html">Logout</a>
 </div>
 <div class="card-check">
-	<center><h2>Cek Harga Pasar</h2></center>
-	<form>
-		<div class="content3">
-			<h3>Cari Harga Pasar</h3>
-			<label>Kecamatan</label><br>
-			<td><select name="Kecamatan"></td>
-                <td><option value="Ajung">Ajung</option>
-                <option value="Ambulu">Ambulu</option>
-                <option value="Arjasa">Arjasa</option>
-                <option value="Bangsalsari">Bangsalsari</option>
-                <td><option value="Balung">Balung</option>
-                <option value="Gumukmas">Gumukmas</option>
-                <option value="Jelbuk">Jelbuk</option>
-                <option value="Jenggawah">Jenggawah</option>
-                <td><option value="Jombang">Jombang</option>
-                <option value="kristen">Kalisat</option>
-                <option value="hindu">Kaliwates</option>
-                <option value="budha">kencong</option></td>
-            </select><br><br>
-            <label>Desa</label><br>
-		<td><select name="Desa">Desa</td>
-                <td><option value="Ajung">Ajung</option>
-                <option value="Ambulu">Klompangan</option>
-                <option value="Arjasa">Mangaran</option>
-                <option value="Bangsalsari">Pancakarya</option>
-                <td><option value="Balung">Rowoindah</option>
-                <option value="Gumukmas">Sukamakmur</option>
-                <option value="Jelbuk">Wirowongso</option></td>
-            </select><br><br>
-            <label>Jenis Tanaman</label><br>
-			<input type="text" name="" placeholder="Jenis Tanaman"><br><br></td>
-		</form>
-		</div>
-		<div class="hasil">
-			<h4>Daerah : Ajung, Jember </h4>
-		<table>
-		  <tr>
-		    <th>Tanaman</th>
-		    <th>Harga</th>
-		    
-		  </tr>
-		  <tr>
-		    <td>Cabai</td>
-		    <td>$100</td>
-		  </tr>
-		  <tr>
-		    <td>Beras</td>
-		    <td>$150</td>
-		  </tr>
-		  <tr>
-		    <td>Bawang Merah</td>
-		    <td>$300</td>
-		  </tr>
-		  <tr>
-		    <td>Terong</td>
-		    <td>$250</td>
-		  </tr>
-		  <tr>
-		    <td>Jagung</td>
-		    <td>$250</td>
-		  </tr>
-		  <tr>
-		    <td>Bayam</td>
-		    <td>$250</td>
-		  </tr>
-		  <tr>
-		    <td>Kubis</td>
-		    <td>$250</td>
-		  </tr>
-		  <tr>
-		    <td>Kol</td>
-		    <td>$250</td>
-		  </tr>
-		  <tr>
-		    <td>Singkong</td>>
-		    <td>$250</td>
-		  </tr>
-		</table>
-		</div>
+<h2>Cek Harga Pasar</h2>
+<form>
+	<label>Wilayah</label>
+	<select name="Wilayah">
+                <option value="Semua Wilayah">Semua Wilayah</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Kediri">Kediri</option>
+                <option value="Jember">Jember</option>
+                <option value="Sidoarjo">Sidoarjo</option>
+                <option value="Pasuruan">pasuruan</option>
+                <option value="Jombang">Jombang</option>
+                <option value="Lumajang">Lumajang</option>
+    </select>
+    <label>Komuditi</label>
+	<select name="Wilayah">
+                <option value="Semua Wilayah">Semua Komuditi</option>
+                <option value="Surabaya">Beras</option>
+                <option value="Kediri">Cabai</option>
+                <option value="Jember">Kedelai</option>
+                <option value="Sidoarjo">Bawang Merah</option>
+                <option value="Pasuruan">Bawang Putih</option>
+                <option value="Jombang">Kakao</option>
+                <option value="Lumajang">Kacang Panjang</option>
+    </select>
+    <input class="button" type="button" value="Cari">		
+</form>
+<p>Harga Komuditi Ditingkat Petani per 8 Desember 2019 13:00 WIB</p>
+<div class="hasil">
+	<h3>BERAS</h3>
+<table>
+        <tr>
+            <td>Komuditi</td>
+            <td>Harga Sebelumnya</td>
+            <td>Harga Sekarang</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Kediri</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Pasuruan</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Situbondo</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Jember</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Blitar</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Jombang</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Lumajang</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+    </table>
+
+	<h3>BAWANG PUTIH</h3>
+<table>
+        <tr>
+            <td>Komuditi</td>
+            <td>Harga Sebelumnya</td>
+            <td>Harga Sekarang</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Magetan</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Sidoarjo</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Tulungagung</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+    </table>
+
+	<h3>WORTEL</h3>
+<table>
+        <tr>
+            <td>Komuditi</td>
+            <td>Harga Sebelumnya</td>
+            <td>Harga Sekarang</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+    </table>
+</div>
+<div class="hasil2">
+	<h3>KACANG TANAH</h3>
+<table>
+        <tr>
+            <td>Komuditi</td>
+            <td>Harga Sebelumnya</td>
+            <td>Harga Sekarang</td>
+        </tr>
+        <tr>
+            <td>Blitar</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Bojonegoro</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Jember</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Jombang</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Gresik</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+    </table>
+
+	<h3>KAKAO</h3>
+<table>
+        <tr>
+            <td>Komuditi</td>
+            <td>Harga Sebelumnya</td>
+            <td>Harga Sekarang</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Malang</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Jember</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Ponorogo</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Trenggalek</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+    </table>
+
+	<h3>GANDUM</h3>
+<table>
+        <tr>
+            <td>Komuditi</td>
+            <td>Harga Sebelumnya</td>
+            <td>Harga Sekarang</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+        <tr>
+            <td>Surabaya</td>
+            <td>10650</td>
+            <td>11000</td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>

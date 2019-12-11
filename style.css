@@ -43,12 +43,6 @@ ul li.active a{
   color: #000;
 }
 
-  .logo h1{
-    float: left;
-    width: 150px;
-    height: auto;
-  }
-
   .main{
     max-width: 1200px;
     margin: auto;
@@ -207,26 +201,20 @@ ul li.active a{
   left: 30%;
 }
 
-
   input[type=text], select {
   width: 100%;
   padding: 12px 20px;
-  /*margin: 8px 0;*/
   display: inline-block;
   border: 1px solid #ccc;
-  /*border-radius: 4px;*/
   box-sizing: border-box;
 }
  input[type=Password], select {
   width: 100%;
   padding: 12px 20px;
-  /*margin: 8px 0;*/
   display: inline-block;
   border: 1px solid #ccc;
-  /*border-radius: 4px;*/
   box-sizing: border-box;
 }
-
 input[type=button] {
   width: 100%;
   background-color: #666600;
@@ -269,7 +257,97 @@ form p{
   padding-bottom: 30px;
 }
 
-form .bantuan{
-  margin-left: 35%;
-  padding-top: 10px;
+@media screen and (max-width: 960px) {
+ 
+  .header {
+    position:inherit;
+  }
+ 
+  .main {
+    width: 90%;
+    margin:25px auto;
+  }
+  .title {
+    position: inherit;;
+  }
+  .button {
+    width:100%;
+    /*margin:25px 0 0;*/
+    float:right;
+  }
+ 
+ ul {
+    width: 100%;
+  }
+ 
+  ul {
+    float:inherit;
+  }
+ 
+ul li {
+    float:inherit;
+    margin:0;
+  }
+ 
+ ul li a {
+    padding: 5px 20px;
+    font-size: 20px;
+    
+  }
+ 
+  .container {
+    width:90%;
+  }
+ 
+ .left{
+    float:inherit;
+ /*   margin:0 auto 25px*/;
+    width:101%;
+    padding:5%;  
+  }
+ 
+  .container.left img {
+    max-width: 110%;
+ /*   margin:0 0 25px -5%;*/
+    min-width: 100%;
+  }
+ .container.right img {
+    max-width: 110%;
+   /* margin:0 0 25px -5%;*/
+    min-width: 100%;
+  }
+  .container.center img {
+    max-width: 110%;
+    /*margin:0 0 25px -5%;*/
+    min-width: 100%;
+  }
+  .center2 img{ 
+    max-width: 110%;
+    /*margin:0 0 25px -5%;*/
+    min-width: 100%;
+   }
+  
 }
+ 
+/*@media screen and (max-width: 460px) {
+ 
+  nav.menu ul a {
+    padding:15px;
+    font-size: 14px;
+  }
+ 
+  .sidebar {
+    display:none
+  }
+  .post-info {
+    display:none;
+  }
+ 
+  .conteudo {
+    margin:25px auto;
+  }
+ 
+  .conteudo img {
+    margin:-5% 0 25px -5%;
+  }     
+}*/
