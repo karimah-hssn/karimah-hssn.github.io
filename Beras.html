@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Farm Planner</title>
+    <link rel="stylesheet" type="text/css" href="style10.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $("#inputan").on("keyup", function() {
+          var value = $(this).val().toLowerCase();
+          $("#bodimu #rownya").filter(function() {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          });
+        });
+      });
+    </script>
+</head>
+<body>
+<div class="sidebar">
+         <a href="dasbor.html">Farm Planner</a>
+         <a href="profile.html">Profile</a>
+         <a href="cekLahan.html"> Cek Lahan </a>
+         <a class="active" href="CekKomoditas.html">Cek Komoditas</a>
+         <a href="lihatanaman.html">Lihat Tanaman</a>
+         <a href="cekHargaPasar.html">Cek Harga Pasar</a>
+         <a href="Index.html">Logout</a>
+</div>
+<div class="card">
+    <h2>Cek Komuditas</h2>
+    <h2>BERAS</h2>
+    <div class="label1">
+    <label>Provinsi :</label> &nbsp;
+    <input id="inputan" type="text" placeholder="Cari Provinsi"></div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="beras.jpg"></div>
+      <div class="mySlides fade">
+        <img src="beras2.jpg"></div>
+      <div class="mySlides fade">
+        <img src="beras3.jpg"></div>
+      <div class="mySlides fade">
+        <img src="beras4.jpg"></div>
+    </div>
+    <p> Beras adalah bagian bulir padi (gabah) yang telah dipisah dari sekam. Sekam (Jawa merang) secara anatomi disebut 'palea' (bagian yang ditutupi) dan 'lemma' (bagian yang menutupi). Pada salah satu tahap pemrosesan hasil panen padi, gabah ditumbuk dengan lesung atau digiling sehingga bagian luarnya (kulit gabah) terlepas dari isinya. Bagian isi inilah, yang berwarna putih, kemerahan, ungu, atau bahkan hitam, yang disebut beras.</p>
+    <h4>Tabel Luas Panen Padi Menurut Provinsi, 2017 - 2019</h4>
+    <center>
+        <table>
+            <thead>
+        <tr>
+            <td rowspan="2">No</td>
+             <td rowspan="2">Provinsi</td>
+            <td colspan="3">Tahun (Ha)</td>
+            <td rowspan="2"> Pertumbuhan 2019 Terhadap 2018 (%)</td>
+        </tr>
+        <tr id="rownya">
+            <td>2017</td>
+            <td>2018</td>
+            <td>2019</td>
+        </tr></thead>
+        <tbody id="bodimu">
+        <tr id="rownya">
+            <td>1</td>
+            <td>Jawa Timur</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr id="rownya">
+            <td>2</td>
+            <td>Jawa Barat</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr id="rownya">
+            <td>3</td>
+            <td>Jawa Tengah</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr id="rownya">
+            <td>4</td>
+            <td>Aceh</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr id="rownya">
+            <td>5</td>
+            <td>Sumatra Barat</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr id="rownya">
+            <td>6</td>
+            <td>Sumatra Utara</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr id="rownya">
+            <td>7</td>
+            <td>Sumatra Selatan</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>8</td>
+            <td>Riau</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td>9</td>
+            <td>Jambi</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr  id="rownya">
+            <td>10</td>
+            <td>Bengkulu</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>11</td>
+            <td>Lampung</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td>12</td>
+            <td>Kep Bangka Belitung</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr  id="rownya">
+            <td>13</td>
+            <td>Kep Riau</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>14</td>
+            <td>DKI Jakarta</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td>15</td>
+            <td>DI Yogyakarta</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr id="rownya">
+            <td>16</td>
+            <td>Banten</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr id="rownya">
+            <td>17</td>
+            <td>Bali</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr  id="rownya">
+            <td>18</td>
+            <td>Nusa Tenggara Timur</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>19</td>
+            <td>Nusa tenggara Barat</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td>20</td>
+            <td>Kalimatan Tengah</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr  id="rownya">
+            <td>21</td>
+            <td>Kalimantan Timur</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>22</td>
+            <td>Kalimantan Barat</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td>23</td>
+            <td>Kalimantan Selatan</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr  id="rownya">
+            <td>24</td>
+            <td>Kalimantan Utara</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>25</td>
+            <td>Sulawesi Utara</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td>26</td>
+            <td>Sulawesi Tengah</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr  id="rownya">
+            <td>27</td>
+            <td>Sulawesi Selatan</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>28</td>
+            <td>Sulawesi Tenggara</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td>29</td>
+            <td>Sulawesi Barat</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr  id="rownya">
+            <td>30</td>
+            <td>Gorontalo</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>31</td>
+            <td>Maluku</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td>32</td>
+            <td> Maluku Utara</td>
+            <td>1,576,655</td>
+            <td>1,765,988</td>
+            <td>1,766,000</td>
+            <td>1,2</td>
+        </tr>
+        <tr  id="rownya">
+            <td>33</td>
+            <td>Papua</td>
+            <td>2,125,653</td>
+            <td>2,456,231</td>
+            <td>2,198,788</td>
+            <td> -1.26</td>
+        </tr>
+        <tr  id="rownya">
+            <td>34</td>
+            <td>Papua Barat</td>
+            <td>1,987,765</td>
+            <td>1,899,877</td>
+            <td>2,345,888</td>
+            <td>1,52</td>
+        </tr>
+        <tr  id="rownya">
+            <td colspan="2">Indonesia</td>
+            <td>13,145,768</td>
+            <td>15,768,999</td>
+            <td>16,777,999</td>
+            <td>2,3</td>
+        </tr>
+    </tbody>
+    </table></center>
+    <label> Sumber : Badan Pusat Statistik</label><br>
+    <label> Keterangan : 1) Angka Ramalan I (Hasil Rakor di Solo tanggal 25-27 Juli 2018)</label>
+<div class="bawah">
+    <h3>KOMUDITI LAINNYA</h3>
+    <div class="bawah1">
+    <a href="Cekkomuditas.html"><h3>KOPI</h3></a>
+    <img src="kopi.jpg"></div>
+    <div class="bawah1">
+    <a href="Cekkomuditas.html"><h3>KEDELAI</h3></a>
+    <img src="kedelai.jpg"></div>
+    <div class="bawah1">
+    <a href="Cekkomuditas.html"><h3>JAGUNG</h3></a>
+    <img src="jagung2.jpg"></div>
+    <div class="bawah1">
+    <a href="Cekkomuditas.html"><h3>KACANG HIJAU</h3></a>
+    <img src="kacanghijau.jpg"></div>
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 1500); // Change image every 2 seconds
+}
+
+</script>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+</body>
+</html>

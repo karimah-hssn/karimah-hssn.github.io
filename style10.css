@@ -39,17 +39,224 @@ body {
   color: #000000;
 }
 .card{
-  padding: 0px 10px;
+  padding: 20px 20px;
   width:950px;
-  height:1000px;
-  background:#666600;
-  margin-top: 75px;
+  height:2000px;
+  background-color: rgba(128,128,0,0.9);
+  margin-top: 50px;
   margin-left: 17.5em;
   border-radius: 5px 5px 5px 5px;
 }
+.card h2{
+  margin-left: 20px;
+}
 .card img{
   width: 350px;
-  height:300px;
+  height:250px;
   margin-top: 10px;
   margin-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.card input{
+  width: 300px;
+  height: 30px;
+}
+.label1{
+  float: right;
+  margin-right: 10%;
+  position: relative;
+}
+.slideshow-container {
+    position: absolute;
+    border-width: 10px solid white;
+    overflow: hidden;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.
+/* Fading animation */*/*/*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ .card p{
+  float: right;
+  position: relative;
+    width: 55%;
+    margin-right: 20px;
+    text-align: justify;
+    margin-top: 10px;
+    color: white;
+}
+.card label{
+  font-size: 18px;
+  margin-left: 100px;
+  position: relative;
+}
+.card h4{
+  margin-top: 37%;
+  margin-left: 100px;
+}
+table {
+  margin-top: 10px;
+  position: relative;
+  width: 80%;
+}
+
+th, td {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  color: white;
+  text-align: center;
+
+}
+.bawah img{
+  width: 200px;
+  height: 150px;
+
+}
+.bawah1 {
+  float: left;
+  margin right: 20px;
+  margin-left: 10px;
+}
+.bawah1 h3{
+  position: absolute;
+    width:200px;
+    height: 30px;
+    margin-top: 160px;
+    color: black;
+    margin-left: 20px;
+    background-color: white;
+    text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .sidebar {
+  /*height: 100%;*/
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #666600;
+  overflow-x: hidden;
+  padding-top: 5px;
+}
+
+
+.card{
+  /*margin-left: -10px;*/
+  /*margin-right: 60px;*/
+  
+  width:550px;
+  height:190em;
+  background:#666600;
+  margin-top: 50px;
+  margin-left: 0.1em;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.card h3{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+.card p{
+  margin-top: 13em;
+  margin-right: 9em;
+  font-size: 20px;
+  /*text-align: justify;*/
+  color: white;
+}
+
+.card h4{
+  margin-top: 35em;
+
+}
+
+/*.card a{
+  text-decoration: none;
+  margin-left: 25%;
+  font-size: 20px;
+  background-color: #CCCC00;
+  padding: 10px 10px 10px 10px;
+  color: white; 
+  margin-top: 20px;
+}*/
+
+/*.card a:hover{
+   background-color: #7FFF00;
+  color: #000000;
+
+}*/
+
+.card img{
+  height: 200px;
+  float: left;
+  align-self: center;
+  /*padding: 10px 10px;*/
+  /*padding-bottom: 10px;*/
+  position: relative;
+}
+
+.bawah{
+  /*height: 100px;*/
+  margin-left: 30px;
+}
+
+.bawah .bawah1 {
+  height: 300px;
+
+}
+
+.bawah .bawah1 a{
+  height: 100px; 
+}
+
+.bawah .bawah1 a h3{
+  /*height: 50px;*/
+  color: black; 
+  margin-top: 8em; 
+  /*height: 200px;
+  width: 200px;*/
+  /*height: 500;*/
+}
+
+table{
+  width: 100%;
+  margin-right: 100px;
+}
+
+
 }

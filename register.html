@@ -3,6 +3,82 @@
 <head>
 	<title>Farm Planner - Register</title>
 	<link rel="stylesheet" type="text/css" href="style7.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/top_menu.js"></script>
+<script type="text/javascript">
+
+// //modal untuk error form
+
+	function modalShow() {
+		$("#id_modal").show();
+		$("#id_modal").css('animation', 'show_modal');
+	}
+
+	function modalHide() {
+		$("#id_modal").css('animation', 'hide_modal');
+		setTimeout(function function_name() {
+			$("#id_modal").hide();
+		}, 300);
+	}
+
+	function show_error(pesan) {
+		$("#popup_error").find('b').html(pesan);
+		$("#popup_error").show();
+		$("#popup_error").css('animation', 'show_modal');
+
+	$("#close_error_form").click(function(event) {
+		$("#popup_error").css('animation', 'hide_modal');
+		setTimeout(function function_name() {
+			$("#popup_error").hide();
+		}, 300);
+	});
+
+	window.onclick = function(event) {
+		var modal = document.getElementById('popup_error');
+		if(event.target == modal){
+			$("#popup_error").css('animation', 'hide_modal');
+			setTimeout(function function_name() {
+				$("#popup_error").hide();
+			}, 300);
+		}
+	};
+}
+
+//validasi form
+
+	$('#login').on('click', function(event) {
+			event.preventDefault();
+			var NamaDepan = $("input[name='NamaDepan]").val();
+			var NamaBelakang = $("input[name='NamaBelakang']").val();
+			var username = $("input[name='username']").val();
+			var Email = $("input[name='Email']").val();
+			var password = $("select[name='password']").val();
+
+			var namaAtur = /^[a-zA-Z' ]+$/; //alfabet(besar atau kecil), petik ('), dan spasi saja
+			var angka = /^\d+$/; //angka saja
+			var emailAtur = /^([a-zA-Z0-9_.+-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+			
+			if (NamaDepan== "" || NamaBelakang == "" || username == ""|| Email == "" || password == "") {
+				show_error('Harap lengkapi data diri untuk melakukan pendaftaran');
+			}
+			else if (!namaAtur.test(NamaDepan)) {
+				show_error("Nama hanya boleh menggunakan huruf dan tanda petik");
+			}
+			else if (!emailAtur.test(Email)) {
+				show_error("Email tidak sesuai")
+			}
+			else if (!namaAtur.test(username.length < 13)){
+				show_error("maksimal 12 karakter")
+			}
+			else if (password.length < 9) {
+				show_error("Password harus minimal 9 karakter");
+			}
+			else{
+				$("#login").off('click').trigger('click');
+			}
+	});
+</script>
+</script>
 </head>
 <body>
 		<div class="main">
@@ -20,22 +96,35 @@
 			<h1>Farm Planner</h1>
 		</div>
 		<div class="box">
-  <form action="">
+  <form action="login.html">
   <h3>Daftar Disini</h3><br>
-    <label for="fname">Nama Depan</label>
-    <input type="text" id="fname" name="firstname" placeholder="Nama Depan*">
-    <label for="lname">Nama Belakang</label>
-    <input type="text" id="lname" name="lastname" placeholder="Nama Belakang*">
-    <label for="lname">Nama Pengguna</label>
+    <label for="NamaDepan">Nama Depan</label>
+    <input type="text" id="NamaDepan" name="NamaDepan" placeholder="Nama Depan*">
+    <label for="NamaBelakang">Nama Belakang</label>
+    <input type="text" id="NamaBelakang" name="NamaBelakang" placeholder="Nama Belakang*">
+    <label for="Username">Nama Pengguna</label>
     <input type="text" id="username" name="username" placeholder="Nama Pengguna*">
-    <label for="lname">Email</label>
+    <label for="Email">Email</label>
     <input type="text" id="Email" name="Email" placeholder="Email*">
-    <label for="lname">Kata Sandi</label>
-    <input type="Password" id="Email" name="Email" placeholder="Kata Sandi*"><br>
-    <center><a href="dasbor.html"><input type="button" value="Daftar"></center>
+    <label for="password">Kata Sandi</label>
+    <input type="Password" id="password" name="password" placeholder="Kata Sandi*"><br>
+    <center><input type="button" value="Daftar"></center>
     <a href="login.html">Sudah Punya Akun?Masuk Disini!!</a>
   </form>
-</div>
+  <div class="error" id="popup_error">
+			<div class="error_content">
+				<div class="error_top">
+					<h3>Warning !!!</h3>
+				</div>
 
+				<div class="error_middle">
+					<b></b>
+				</div>
+
+				<div class="error_bottom">
+					<button class="btn" id="close_error_form">Cancel</button>
+				</div>
+			</div>
+</div>
 </body>
 </html>

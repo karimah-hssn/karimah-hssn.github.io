@@ -2,7 +2,24 @@
 <html>
 <head>
 	<title>Farm Planner - Login</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="stylee.css">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+    function validateForm(inputtxt) {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        
+        var letters = /^[A-Za-z]+$/;
+        if (username == "" || password == "" && inputtxt.value.match(letters)) {
+            alert("Username atau password Harus Diisi");
+        } else if (username < "a" || username > "z") {
+            alert("Username Harus Berupa Huruf Kecil")
+        } 
+        else{
+           window.location = "dasbor.html" 
+        }
+    }
+</script>
 </head>
 <body>
 	<header>
@@ -25,14 +42,11 @@
 		<p id="demo" style="color: red"></p>
   <form action="">
   	<h3>Login</h3><br>
-    <label for="fname">UserName</label>
-    <input type="text" name="firstname" id="UserName" placeholder="UserName" required="">
-
-    <label for="lname">Password</label>
-    <input type="Password" name="lastname" id="Password" placeholder="Password" required=""><br><br>
-  	
-  	<center>
-  		    <a href="dasbor.html"><input onclick="myFunction()" type="button" value="Login"> </a>
+    <label for="username">Username</label>
+    <input type="text" name="Username" id="username" placeholder="Username" required="">
+    <label for="password">Password</label>
+    <input type="Password" name="password" id="password" placeholder="Password" required=""><br><br>
+    <center> <input type="button" onclick="validateForm()" value="Login"> </a>
   	</center>
  <br>
     <a href="register.html">Belum Punya Akun ?</a>
@@ -41,12 +55,6 @@
 </div>
 </header>
 
-
-<script>
-function myFunction() {
-  alert('Selamat Anda Berhasil Login');
-}
-</script>
 
 </body>
 </html>

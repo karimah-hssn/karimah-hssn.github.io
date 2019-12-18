@@ -1,23 +1,26 @@
+
 body {
   margin:0;
   font-family: 'Segoe UI';
   background-image: url('sawah.jpg');
   background-size: 1440px 720px;
+  width: 100%;
+  background-attachment: fixed;
 }
 
 .atasan ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   position:fixed;
   top: 0;
   width: 100%;
-
+  height: auto;
 }
 
 .atasan li {
   float: left;
+  height: auto;
 }
 
 .atasan li a {
@@ -26,14 +29,17 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  height: auto;
 }*/
 
 .atasan li a:hover:not(.active) {
   background-color: #111;
+  height: auto;
 }
 
 .active {
   background-color: #CCCC00;
+  height: auto;
 }
 
 .center{
@@ -41,6 +47,7 @@ body {
   margin-top:2em;  
   font-size: 40px;
   font-family: "Gloss And Bloom";
+  height: auto;
 }
 .center p{
   font-size: 30px;
@@ -48,13 +55,19 @@ body {
   text-align: center;
   color: white;
   padding: 0px 100px 100px;
+  height: auto;
 }
 
 .bottomText{
   text-align: center;
   margin-top: 10em;
+  height: auto;
 }
-@media only screen and (max-width: 1080px) {
+
+@media only screen and (max-width: 768px) {
+  .body{
+    width: auto;
+  }
   .atasan ul {
     width: auto;
   }
@@ -71,13 +84,17 @@ body {
     width: auto;
   }
   .center{
-    width: 68%;
+    width: auto;
   }
   .center p{
-    width: 68%;
+    width: auto;
   }
   .bottomText{
-    width: 68%;
+    width: auto;
   }
 }
+
+
+
+
 
